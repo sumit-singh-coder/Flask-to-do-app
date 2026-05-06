@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static' , filename='index.css')}}">
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="/" method="post">
+            <h2>To-Do-App</h2>
+            <input class="in" type="text" name="task" placeholder="Enter task">
+            <button type="submit">Add</button>
+            
+        </form>
+        <ul>
+            
+            {% for task in tasks %}
+            <li>
+                <span class="tasks">
+                    {{task.content}}
+                    
+                </span>
+                <a href="/delete/{{task.id}}" class="delete-btn">Delete </a>
+                <input type="checkbox">
+            </li>
+            {% endfor %}
+            
+            
+        </ul>
+    </div>
+</body>
+
+</html>

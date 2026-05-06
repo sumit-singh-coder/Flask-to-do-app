@@ -1,0 +1,57 @@
+body {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+       background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);;
+}
+
+.tasks {
+
+    font-family: cursive;
+    font-weight: bold;
+    
+    
+}
+
+.delete-btn {
+
+    font-family: cursive;
+}
+
+.delete-btn:hover {
+    color: brown;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 280px;
+    text-align: center;
+    height: 300px;
+    background-color: rgb(213, 235, 191);
+}
+
+button {
+
+    width: 50px;
+    border-radius: 25px;
+    border: none;
+    height: 26px;
+    color: rgb(255, 255, 255);
+    background-color: coral;
+    font-weight: bold;cursor: pointer;
+    margin-left: 10px;
+}
+
+.in {
+     
+    height: 28px;
+    border: #3F5EFB;
+    text-align: center;
+    border-radius: 12px;
+}
